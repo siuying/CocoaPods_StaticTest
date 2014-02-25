@@ -1,18 +1,18 @@
 //
-//  TestStaticTests.m
-//  TestStaticTests
+//  SampleLibTests.m
+//  SampleLibTests
 //
-//  Created by Francis Chong on 2/25/14.
+//  Created by Francis Chong on 2/26/14.
 //  Copyright (c) 2014 Ignition Soft. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface TestStaticTests : XCTestCase
+@interface SampleLibTests : XCTestCase
 
 @end
 
-@implementation TestStaticTests
+@implementation SampleLibTests
 
 - (void)setUp
 {

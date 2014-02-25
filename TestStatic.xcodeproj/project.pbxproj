@@ -21,7 +21,10 @@
 		5486915518BCDAAB006C2952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486913118BCDAAB006C2952 /* Foundation.framework */; };
 		5486915618BCDAAB006C2952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486913518BCDAAB006C2952 /* UIKit.framework */; };
 		5486915E18BCDAAB006C2952 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5486915C18BCDAAB006C2952 /* InfoPlist.strings */; };
-		5486916018BCDAAB006C2952 /* TestStaticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486915F18BCDAAB006C2952 /* TestStaticTests.m */; };
+		5486917018BCDF0E006C2952 /* UserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486916F18BCDF0E006C2952 /* UserSpec.m */; };
+		5486917918BCEC60006C2952 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486917818BCEC60006C2952 /* TestHelper.m */; };
+		60D6890FF07545EF81C23A5E /* libPods-TestStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5965093BE8E54124AA3AD4E6 /* libPods-TestStatic.a */; };
+		A6A6702762614376A922963A /* libPods-TestStaticTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB2A83185034A0D8F457084 /* libPods-TestStaticTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B3DD4FE758E4AFCAFA8939F /* Pods-TestStaticTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestStaticTests.xcconfig"; path = "Pods/Pods-TestStaticTests.xcconfig"; sourceTree = "<group>"; };
+		3BB2A83185034A0D8F457084 /* libPods-TestStaticTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestStaticTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5486912E18BCDAAB006C2952 /* TestStatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestStatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5486913118BCDAAB006C2952 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5486913318BCDAAB006C2952 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +59,11 @@
 		5486915318BCDAAB006C2952 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5486915B18BCDAAB006C2952 /* TestStaticTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestStaticTests-Info.plist"; sourceTree = "<group>"; };
 		5486915D18BCDAAB006C2952 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5486915F18BCDAAB006C2952 /* TestStaticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStaticTests.m; sourceTree = "<group>"; };
+		5486916F18BCDF0E006C2952 /* UserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSpec.m; sourceTree = "<group>"; };
+		5486917718BCEC60006C2952 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
+		5486917818BCEC60006C2952 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
+		5965093BE8E54124AA3AD4E6 /* libPods-TestStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestStatic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCDF726EA414331BF666748 /* Pods-TestStatic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestStatic.xcconfig"; path = "Pods/Pods-TestStatic.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 				5486913418BCDAAB006C2952 /* CoreGraphics.framework in Frameworks */,
 				5486913618BCDAAB006C2952 /* UIKit.framework in Frameworks */,
 				5486913218BCDAAB006C2952 /* Foundation.framework in Frameworks */,
+				60D6890FF07545EF81C23A5E /* libPods-TestStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,7 @@
 				5486915418BCDAAB006C2952 /* XCTest.framework in Frameworks */,
 				5486915618BCDAAB006C2952 /* UIKit.framework in Frameworks */,
 				5486915518BCDAAB006C2952 /* Foundation.framework in Frameworks */,
+				A6A6702762614376A922963A /* libPods-TestStaticTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,8 @@
 				5486915918BCDAAB006C2952 /* TestStaticTests */,
 				5486913018BCDAAB006C2952 /* Frameworks */,
 				5486912F18BCDAAB006C2952 /* Products */,
+				5BCDF726EA414331BF666748 /* Pods-TestStatic.xcconfig */,
+				3B3DD4FE758E4AFCAFA8939F /* Pods-TestStaticTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +120,8 @@
 				5486913318BCDAAB006C2952 /* CoreGraphics.framework */,
 				5486913518BCDAAB006C2952 /* UIKit.framework */,
 				5486915318BCDAAB006C2952 /* XCTest.framework */,
+				5965093BE8E54124AA3AD4E6 /* libPods-TestStatic.a */,
+				3BB2A83185034A0D8F457084 /* libPods-TestStaticTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,8 +155,10 @@
 		5486915918BCDAAB006C2952 /* TestStaticTests */ = {
 			isa = PBXGroup;
 			children = (
-				5486915F18BCDAAB006C2952 /* TestStaticTests.m */,
 				5486915A18BCDAAB006C2952 /* Supporting Files */,
+				5486916F18BCDF0E006C2952 /* UserSpec.m */,
+				5486917718BCEC60006C2952 /* TestHelper.h */,
+				5486917818BCEC60006C2952 /* TestHelper.m */,
 			);
 			path = TestStaticTests;
 			sourceTree = "<group>";
@@ -162,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5486916318BCDAAB006C2952 /* Build configuration list for PBXNativeTarget "TestStatic" */;
 			buildPhases = (
+				172B2CE2149C42409D475895 /* Check Pods Manifest.lock */,
 				5486912A18BCDAAB006C2952 /* Sources */,
 				5486912B18BCDAAB006C2952 /* Frameworks */,
 				5486912C18BCDAAB006C2952 /* Resources */,
+				03A60E80D9384B8A82E93CE8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5486916618BCDAAB006C2952 /* Build configuration list for PBXNativeTarget "TestStaticTests" */;
 			buildPhases = (
+				626C53165BC44F8D827FE7EE /* Check Pods Manifest.lock */,
 				5486914E18BCDAAB006C2952 /* Sources */,
 				5486914F18BCDAAB006C2952 /* Frameworks */,
 				5486915018BCDAAB006C2952 /* Resources */,
+				52FFC33CE407493C9D54FD28 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +270,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03A60E80D9384B8A82E93CE8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TestStatic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		172B2CE2149C42409D475895 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		52FFC33CE407493C9D54FD28 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TestStaticTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		626C53165BC44F8D827FE7EE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5486912A18BCDAAB006C2952 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5486916018BCDAAB006C2952 /* TestStaticTests.m in Sources */,
+				5486917018BCDF0E006C2952 /* UserSpec.m in Sources */,
+				5486917918BCEC60006C2952 /* TestHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +475,7 @@
 		};
 		5486916418BCDAAB006C2952 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCDF726EA414331BF666748 /* Pods-TestStatic.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -403,6 +489,7 @@
 		};
 		5486916518BCDAAB006C2952 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCDF726EA414331BF666748 /* Pods-TestStatic.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -416,6 +503,7 @@
 		};
 		5486916718BCDAAB006C2952 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3DD4FE758E4AFCAFA8939F /* Pods-TestStaticTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestStatic.app/TestStatic";
@@ -439,6 +527,7 @@
 		};
 		5486916818BCDAAB006C2952 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3DD4FE758E4AFCAFA8939F /* Pods-TestStaticTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestStatic.app/TestStatic";
@@ -475,6 +564,7 @@
 				5486916518BCDAAB006C2952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5486916618BCDAAB006C2952 /* Build configuration list for PBXNativeTarget "TestStaticTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +573,7 @@
 				5486916818BCDAAB006C2952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,1 @@
+../../../SampleLib/Manager.h

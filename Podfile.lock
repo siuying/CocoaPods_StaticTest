@@ -1,0 +1,28 @@
+PODS:
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+  - Kiwi/ARC (2.2.3)
+  - Kiwi/NonARC (2.2.3)
+  - Kiwi/XCTest (2.2.3):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - SampleLib (0.0.1)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - Kiwi/XCTest
+  - SampleLib (from `SampleLib`)
+
+EXTERNAL SOURCES:
+  SampleLib:
+    :path: SampleLib
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  SampleLib: 2427c3a96fa1ae0d148ddcde4a3682206b19902f
+
+COCOAPODS: 0.29.0
