@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542C01E018BD039A00A1CD5E /* UserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486916F18BCDF0E006C2952 /* UserSpec.m */; };
 		5486913218BCDAAB006C2952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486913118BCDAAB006C2952 /* Foundation.framework */; };
 		5486913418BCDAAB006C2952 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486913318BCDAAB006C2952 /* CoreGraphics.framework */; };
 		5486913618BCDAAB006C2952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486913518BCDAAB006C2952 /* UIKit.framework */; };
@@ -21,8 +22,6 @@
 		5486915518BCDAAB006C2952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486913118BCDAAB006C2952 /* Foundation.framework */; };
 		5486915618BCDAAB006C2952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5486913518BCDAAB006C2952 /* UIKit.framework */; };
 		5486915E18BCDAAB006C2952 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5486915C18BCDAAB006C2952 /* InfoPlist.strings */; };
-		5486917018BCDF0E006C2952 /* UserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486916F18BCDF0E006C2952 /* UserSpec.m */; };
-		5486917918BCEC60006C2952 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5486917818BCEC60006C2952 /* TestHelper.m */; };
 		60D6890FF07545EF81C23A5E /* libPods-TestStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5965093BE8E54124AA3AD4E6 /* libPods-TestStatic.a */; };
 		A6A6702762614376A922963A /* libPods-TestStaticTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB2A83185034A0D8F457084 /* libPods-TestStaticTests.a */; };
 /* End PBXBuildFile section */
@@ -40,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3B3DD4FE758E4AFCAFA8939F /* Pods-TestStaticTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestStaticTests.xcconfig"; path = "Pods/Pods-TestStaticTests.xcconfig"; sourceTree = "<group>"; };
 		3BB2A83185034A0D8F457084 /* libPods-TestStaticTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestStaticTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		542C01DD18BD026100A1CD5E /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
 		5486912E18BCDAAB006C2952 /* TestStatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestStatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5486913118BCDAAB006C2952 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5486913318BCDAAB006C2952 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,8 +60,6 @@
 		5486915B18BCDAAB006C2952 /* TestStaticTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestStaticTests-Info.plist"; sourceTree = "<group>"; };
 		5486915D18BCDAAB006C2952 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5486916F18BCDF0E006C2952 /* UserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSpec.m; sourceTree = "<group>"; };
-		5486917718BCEC60006C2952 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
-		5486917818BCEC60006C2952 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		5965093BE8E54124AA3AD4E6 /* libPods-TestStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestStatic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCDF726EA414331BF666748 /* Pods-TestStatic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestStatic.xcconfig"; path = "Pods/Pods-TestStatic.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,8 +155,7 @@
 			children = (
 				5486915A18BCDAAB006C2952 /* Supporting Files */,
 				5486916F18BCDF0E006C2952 /* UserSpec.m */,
-				5486917718BCEC60006C2952 /* TestHelper.h */,
-				5486917818BCEC60006C2952 /* TestHelper.m */,
+				542C01DD18BD026100A1CD5E /* UserTest.m */,
 			);
 			path = TestStaticTests;
 			sourceTree = "<group>";
@@ -348,8 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5486917018BCDF0E006C2952 /* UserSpec.m in Sources */,
-				5486917918BCEC60006C2952 /* TestHelper.m in Sources */,
+				542C01E018BD039A00A1CD5E /* UserSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
